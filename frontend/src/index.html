@@ -1,15 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-CL">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/da6daf1276.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="assets/favicon.ico">
+    <title>Abejitas - Emprendedores desde la colmena</title>
 </head>
 
 <body>
-
+    <div id="navbar">
+        <div class="menu">
+            <a href="#home" class="active logo">Abejitas.cl</a>
+            <div id="menu-links">
+                <a href="#container">Registro</a>
+                <a href="#why-us">¿Por qué unirte?</a>
+                <a href="#contact">Contacto</a>
+            </div>
+            <a href="#" id="icon" class="icon">
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+            </a>
+        </div>
+    </div>
+    <div id="container">
+        <section class="subtitle-beekeeping">
+            <p>¡Únete a nuestra comunidad de emprendedores apícolas!</p>
+        </section>
+        <form>
+            <input type="text" name="name" id="name" placeholder="Nombres y Apellidos">
+            <input type="text" name="email" id="email" placeholder="Correo">
+            <input type="text" name="phone" id="phone" placeholder="Teléfono">
+            <input type="text" name="city" id="city" placeholder="Ciudad">
+            <input type="text" name="country" id="country" placeholder="País">
+            <textarea name="message" id="message" cols="30" rows="10"
+                placeholder="¿Por qué te interesa ingresar a la comunidad de emprendedores 'Abejitas.cl'?"></textarea>
+            <button id="register">Registrarse</button>
+        </form>
+        <section id="why-us" class="text-beekeeping">
+            En este espacio, reunimos a apicultores apasionados por las abejas y
+            comprometidos con el emprendimiento en el mundo de la apicultura. Aquí encontrarás información valiosa,
+            consejos prácticos y la oportunidad de conectar con otros apicultores emprendedores de todo el mundo.
+        </section>
+        <br>
+        <section class="text-beekeeping q-a">
+            No importa si eres un principiante absoluto o si ya tienes experiencia en la apicultura, en nuestra
+            comunidad siempre hay algo nuevo por aprender. La apicultura es un campo en constante evolución, y juntos
+            podemos descubrir nuevas técnicas, innovar en nuestros métodos y superar los desafíos que se presenten en el
+            camino.
+        </section>
+        <br>
+        <section id="contact" class="text-beekeeping">
+            Te invitamos a unirte a nuestra comunidad de apicultores y comenzar esta emocionante aventura.
+            ¡Juntos, haremos crecer nuestras colmenas y nuestros emprendimientos apícolas!
+        </section>
+    </div>
+    <footer id="footer">
+        <a href="https://github.com/pibmunoz" target="_blank">© 2023 Abejitas.cl</a>
+        <span>Uniendo zumbidos, cosechamos éxitos!</span>
+    </footer>
+    <script src="js/index.js" type="module"></script>
+    <script src="js/api.js" type="module"></script>
 </body>
 
 </html>
