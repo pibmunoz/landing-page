@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,300&display=swap");
+$font-family: "Poppins", sans-serif;
+$background-color: #eff0f3;
+$layout-breakpoint-small: 768px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* principal styling base */
+body {
+  background-color: $background-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: $font-family;
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .subtitle-beekeeping {
+      font-size: 2rem;
+      color: #ff8e3c;
+      font-weight: 700;
+      background-color: #0d0d0d;
+      width: 100%;
+      height: 200px;
+      margin: 15% 0 1rem 0;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      input,
+      textarea {
+        width: 50%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        width: 100%;
+      }
+      button {
+        background-color: #ff8e3c;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 1.2rem;
+        color: #0d0d0d;
+      }
+    }
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 10rem;
+    font-weight: 900;
+    a {
+      color: #ff8e3c;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+    span {
+      color: white;
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+}
+
+.text-beekeeping {
+  width: 100%;
+  padding: 5%;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  background-color: #0d0d0d;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* hamburger menu */
+.menu {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+}
+
+.menu #menu-links {
+  display: none;
+}
+
+.menu a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.menu a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.menu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.active {
+  background-color: #0d0d0d;
+  color: white;
+  font-weight: 700;
+}
+
+@media (min-width: $layout-breakpoint-small) {
+  body {
+    #container {
+      .subtitle-beekeeping {
+        margin: 10% 0 1rem 0;
+      }
+    }
+  }
+}
